@@ -25,6 +25,11 @@ namespace ConsoleApp1.Classes
         {
             return _speed;
         }
+        public void SetEngine(IEngine engine)
+        {
+            _engine = engine;
+             
+        }
         private void NotifyEngine()
         {
              _engine.SetSpeed(_speed);
